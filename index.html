@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Anirban Chakraborty (Ph.D.) | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+    <link
+      rel="icon"
+      href="assets/images/favicons/favicon-48x48.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="webpage_navigation_bar">
+      <div class="webpage_navigation_bar_page_logo">
+        Dr. Anirban Chakraborty (Ph.D.)
+      </div>
+      <div>
+        <ul class="webpage_navigation_bar_links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="webpage_hamburger_menu">
+      <div class="webpage_hamburger_menu_logo">
+        Dr. Anirban Chakraborty (Ph.D.)
+      </div>
+      <div class="webpage_hamburger_menu_button">
+        <div
+          class="webpage_hamburger_menu_button_icon"
+          onclick="toggle_hamburger_menu_button_icon()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="webpage_hamburger_menu_button_icon_links">
+          <li>
+            <a href="#about" onclick="toggle_hamburger_menu_button_icon()"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#experience" onclick="toggle_hamburger_menu_button_icon()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" onclick="toggle_hamburger_menu_button_icon()"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" onclick="toggle_hamburger_menu_button_icon()"
+              >Contact</a
+            >
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="first_intro">
+      <div class="first_intro_pic_container">
+        <img
+          src="./assets/profile_pics/rounded.png"
+          alt="Dr. Anirban Chakraborty profile picture"
+        />
+      </div>
+      <div class="first_intro_text">
+        <div class="first_intro_text_line_1">Hello, I am</div>
+        <h1 class="first_intro_text_my_name">
+          Dr. Anirban Chakraborty (Ph.D.)
+        </h1>
+        <div class="first_intro_text_line_2">Electrical Engineer</div>
+        <div>&</div>
+        <div id="element_container">
+          <span id="element"></span>
+        </div>
+        <div class="download_button_container">
+          <button
+            class="download_button download_button_color_1"
+            onclick="window.open('./assets/resume/anirban_chakraborty_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="download_button download_button_color_2"
+            onclick="location.href='./#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials_accounts_container">
+          <img
+            src="./assets/icons/linkedin.png"
+            alt="My LinkedIn profile"
+            class="linkedin_icon"
+            onclick="window.open('https://www.linkedin.com/in/anirbanchakraborty91/')"
+          />
+          <img src="./assets/icons/github.png" alt="My Github profile"
+          class="github_icon"
+          onclick="window.open('https://github.com/anirbanchakraborty-dev')"
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Firmware/Microcode Coder",
+          "HDL Coder (SystemVerilog, VHDL)",
+          "Python Enthusiast",
+          "Perl Enthusiast",
+        ],
+        typeSpeed: 50,
+        loop: true,
+        showCursor: false,
+        backSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
