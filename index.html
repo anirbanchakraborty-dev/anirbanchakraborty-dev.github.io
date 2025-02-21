@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Anirban Chakraborty (Ph.D.) | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
@@ -17,12 +18,12 @@
     />
   </head>
   <body>
-    <nav id="webpage_navigation_bar">
-      <div class="webpage_navigation_bar_page_logo">
-        Dr. Anirban Chakraborty (Ph.D.)
+    <nav id="navigation_bar">
+      <div class="navigation_logo">
+        <span id="navigation_logo_element"></span>
       </div>
       <div>
-        <ul class="webpage_navigation_bar_links">
+        <ul class="navigation_bar_links">
           <li><a href="#about">About</a></li>
           <li><a href="#experiences">Experiences</a></li>
           <li><a href="#publications">Publications</a></li>
@@ -32,120 +33,119 @@
       </div>
     </nav>
 
-    <nav id="webpage_hamburger_menu">
-      <div class="webpage_hamburger_menu_logo">
-        Dr. Anirban Chakraborty (Ph.D.)
+    <nav id="hamburger_navigation">
+      <div class="hamburger_navigation_logo">
+        <span id="hamburger_logo_element"></span>
       </div>
-      <div class="webpage_hamburger_menu_button">
-        <div
-          class="webpage_hamburger_menu_button_icon"
-          onclick="toggle_hamburger_menu_button_icon()"
-        >
+      <div class="hamburger_menu">
+        <div class="hamburger_icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="webpage_hamburger_menu_button_icon_links">
+        <div class="hamburger_menu_links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
           <li>
-            <a href="#about" onclick="toggle_hamburger_menu_button_icon()"
-              >About</a
-            >
+            <a href="#publications" onclick="toggleMenu()">Publications</a>
           </li>
-          <li>
-            <a href="#experience" onclick="toggle_hamburger_menu_button_icon()"
-              >Experience</a
-            >
-          </li>
-          <li>
-            <a href="#projects" onclick="toggle_hamburger_menu_button_icon()"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a href="#contact" onclick="toggle_hamburger_menu_button_icon()"
-              >Contact</a
-            >
-          </li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
 
-    <section id="first_intro">
-      <div class="first_intro_pic_container">
+    <section id="profile">
+      <div class="picture_container">
         <img
           src="./assets/profile_pics/rounded.png"
-          alt="Dr. Anirban Chakraborty profile picture"
+          alt="Dr. Anirban Chakraborty (Ph.D.) profile picture"
         />
       </div>
-      <div class="first_intro_text">
-        <div class="first_intro_text_line_1">Hello, I am</div>
-        <h1 class="first_intro_text_my_name">
-          Dr. Anirban Chakraborty (Ph.D.)
-        </h1>
-        <div class="first_intro_text_line_2">Electrical Engineer</div>
-        <div>&</div>
+      <div class="profile_text">
+        <p class="text_p1">Hello, I'm</p>
+        <h1 class="title">Dr. Anirban Chakraborty (Ph.D.)</h1>
+        <p class="text_p2">Electrical Engineer</p>
+        <p>&</p>
         <div id="element_container">
-          <span id="element"></span>
+          <span id="profile_elements"></span>
         </div>
-        <div class="download_button_container">
+        <div class="button_container">
           <button
-            class="download_button download_button_color_1"
+            class="button button_color_2"
             onclick="window.open('./assets/resume/anirban_chakraborty_resume.pdf')"
           >
             Download CV
           </button>
           <button
-            class="download_button download_button_color_2"
+            class="button button_color_1"
             onclick="location.href='./#contact'"
           >
             Contact Info
           </button>
         </div>
-
-        <div id="socials_accounts_container">
+        <div id="socials_container">
           <img
             src="./assets/icons/linkedin.png"
             alt="My LinkedIn profile"
             class="linkedin_icon"
             onclick="window.open('https://www.linkedin.com/in/anirbanchakraborty91/')"
           />
-          <img src="./assets/icons/github.png" alt="My Github profile"
-          class="github_icon"
-          onclick="window.open('https://github.com/anirbanchakraborty-dev')"
+          <img
+            src="./assets/icons/github.png"
+            alt="My Github profile"
+            class="github_icon"
+            onclick="window.open('https://github.com/anirbanchakraborty-dev')"
+          />
         </div>
       </div>
     </section>
 
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="text_p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
+      <div class="section_container">
+        <div class="picture_container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/profile_pics/about.jpg"
             alt="Profile picture"
-            class="about-pic"
+            class="about_pic"
           />
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
+        <div class="about_details_container">
+          <div class="about_containers">
+            <div class="experience_section">
               <img
-                src="./assets/experience.png"
+                src="./assets/icons/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
               <h3>Experience</h3>
               <p>2+ years <br />Frontend Development</p>
             </div>
-            <div class="details-container">
+            <div class="education_section">
               <img
-                src="./assets/education.png"
+                src="./assets/icons/education.png"
                 alt="Education icon"
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <div class="timeline">
+                <div class="timeline_item left">
+                  <p>2016 - 2022</p>
+                  <h4>
+                    Doctor of Philosophy in Electrical Engineering (Ph.D.)
+                  </h4>
+                </div>
+                <div class="timeline_item right">
+                  <p>2013 - 2015</p>
+                  <h4>Master of Engineering (M.E.)</h4>
+                </div>
+                <div class="timeline_item left">
+                  <p>2009 - 2013</p>
+                  <h4>Bachelor of Technology (B.Tech.)</h4>
+                </div>
+              </div>
             </div>
           </div>
           <div class="text-container">
@@ -161,17 +161,271 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/icons/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
     </section>
-
+    <section id="experience">
+      <p class="text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience_details_container">
+        <div class="about_containers">
+          <div class="details_container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details_container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience_details_container">
+        <div class="about_containers">
+          <div class="details_container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="button_container">
+              <button
+                class="button button_color_2 project_button"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="button button_color_2 project_button"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details_container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="button_container">
+              <button
+                class="button button_color_2 project_button"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="button button_color_2 project_button"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details_container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="button_container">
+              <button
+                class="button button_color_2 project_button"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="button button_color_2 project_button"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed("#element", {
+      var typed = new Typed("#profile_elements", {
         strings: [
           "Firmware/Microcode Coder",
           "HDL Coder (SystemVerilog, VHDL)",
@@ -182,6 +436,23 @@
         loop: true,
         showCursor: false,
         backSpeed: 50,
+        smartBackspace: true,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#navigation_logo_element", {
+        strings: ["Dr. Anirban Chakraborty (Ph.D.)"],
+        typeSpeed: 50,
+        loop: false,
+        showCursor: false,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#hamburger_logo_element", {
+        strings: ["Dr. Anirban Chakraborty (Ph.D.)"],
+        typeSpeed: 50,
+        loop: false,
+        showCursor: false,
       });
     </script>
   </body>

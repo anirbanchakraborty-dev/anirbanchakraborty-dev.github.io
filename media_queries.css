@@ -3,7 +3,7 @@
     height: 83vh;
     margin-bottom: 6rem;
   }
-  .about-containers {
+  .about_containers {
     flex-wrap: wrap;
   }
   #contact,
@@ -13,36 +13,36 @@
 }
 
 @media screen and (max-width: 1200px) {
-  #webpage_navigation_bar {
+  #navigation_bar {
     display: none;
   }
-  #webpage_hamburger_menu {
+  #hamburger_navigation {
     display: flex;
   }
   #experience,
-  .experience-details-container {
+  .experience_details_container {
     margin-top: 2rem;
   }
   #profile,
-  .section-container {
+  .section_container {
     display: block;
   }
   .arrow {
     display: none;
   }
   section,
-  .section-container {
+  .section_container {
     height: fit-content;
   }
   section {
     margin: 0 5%;
   }
-  .first_intro_pic_container {
+  .picture_container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
-  .about-containers {
+  .about_containers {
     margin-top: 0;
   }
 }
@@ -63,9 +63,9 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .about-containers,
+  .about_containers,
   .contact-info-upper-container,
-  .btn-container {
+  .button_container {
     flex-wrap: wrap;
   }
   .contact-info-container {
@@ -86,7 +86,7 @@
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
+  .picture_container {
     width: auto;
     height: 46vw;
     justify-content: center;
