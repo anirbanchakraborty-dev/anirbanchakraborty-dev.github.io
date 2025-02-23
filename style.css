@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: rgb(0, 0, 33);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+.navigation-bar-title:hover {
+  cursor: pointer;
+}
+
+#navigation-bar-title-element {
+  display: block;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 515px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.navigation-bar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.navigation-bar-links a {
+  color: wheat;
+  text-decoration: none;
+}
+
+.navigation-bar-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: rgb(235, 189, 242); 
+}
